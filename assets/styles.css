@@ -11,38 +11,65 @@ body {
     padding: 0.5em;
     margin: 0;
 }
-
 #top-nav ul {
     display: flex;
     justify-content: right;
     margin: 0;
 }
-
 #top-nav li {
     display: flex;
-    color: white;
     padding: 0em 1em;
+    font-family: Arial;
+    color: #aaa;
 }
+#top-nav div:hover {
+    color: white;
+    cursor: pointer;
+}
+#top-nav a {
+    text-decoration: none;
+    color: #aaa;
+}
+#top-nav a:hover {
+    color: white;
+}
+#top-nav i {
+    padding-left: 5px;
+}
+
 
 #main-nav ul {
     display: none;
     gap: 0em 1em;
 }
-
 #main-nav li {
     display: inline-block;
 }
 
 #mobile-nav {
     display: flex;
-    padding: 1em 0em;
     border-bottom: 1px solid #eee;
+    justify-content: space-between;
 }
 #mobile-nav h1 {
     color: white;
     font-family: Arial;
     font-size: 2em;
     margin: 0;
+    padding: 0.5em;
+}
+#mobile-nav a {
+    text-decoration: none;
+}
+#hamburger {
+    padding: 1em;
+    color: #ccc;
+    font-size: 1.5em;
+    align-self: center;
+}
+#hamburger:hover {
+    color: white;
+    cursor: pointer;
 }
 
 #hero-img-container {
@@ -61,14 +88,55 @@ body {
 
 main {
     margin: auto;
-    width: 500px;
+    width: 450px;
+    max-width: 90vw;
     position: relative;
-    top: 150px;
+    top: 175px;
 }
 
 #find-personal-plan {
     background-color: white;
-    border-radius: 0.5em;
-    width: 100%
+    border-radius: 5px;
+    padding: 2em;
+    box-shadow: 0px 5px 15px rgb(0, 0, 0, 0.2);
+}
+#find-personal-plan h2 {
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+}
+
+fieldset {
+    border: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em 0em;
+}
+fieldset label {
+    font-family: arial;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-top: 2em;
+}
+fieldset select {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid;
+    border-color: #ccc;
+}
+fieldset select:hover {
+    border-color: teal;
+    cursor: pointer;
+    font-weight: bold;
+}
+fieldset input {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid;
+    border-width: 1px;
+    border-color: #ccc;
+}
+fieldset input:hover {
+    border-color: teal;
 }
 
