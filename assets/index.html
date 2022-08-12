@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+    <title>Oscar Website Mock</title>
+</head>
+
+<body>
+
+    <header>
+        <nav id="top-nav">
+            <ul>
+                <li><a href="#">1-855-672-2788</a></li>
+                <li><a href="#">English</a></li>
+                <li><a href="#">Log In</a></li>
+            </ul>
+        </nav>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="#">Oscar</a></li>
+                <li><a href="#">Medicare</a></li>
+                <li><a href="#">Individuals & Families</a></li>
+                <li><a href="#">Businesses</a></li>
+                <li><a href="#">Brokers</a></li>
+                <li><a href="#">Providers</a></li>
+                <li><a href="#">Shop Plans</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-nav">
+            <div>OSCAR</div>
+            <div id="hamburger"></div>
+        </div>
+
+        <div id="hero-img-container">
+            <img src="/assets/images/hero.png" alt="hero image" id="hero-img">
+        </div>
+    </header>
+
+    <main>
+        <div id="find-personal-plan">
+            <h2>Let's find your personal plan:</h2>
+            <form>
+                <fieldset>
+                    <label for="coverage-starting">Coverage starting</label>
+                    <select name="coverage-starting" id="coverage-starting">
+                        <option value="2021">2021</option>
+                    </select>
+                    <label for="coverage-for">Coverage for</label>
+                    <select name="coverage-for" id="coverage-for">
+                        <option value="me">me</option>
+                    </select>
+                    <label for="zip">ZIP code</label>
+                    <input type="text" id="zip" name="zip" pattern="[0-9{5}" title="5-Digit US Zip Code">
+                    <label for="birthdate"> My birthdate</label>
+                    <input type="text" id="birthdate" name="birthdate" pattern="">
+                </fieldset>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
